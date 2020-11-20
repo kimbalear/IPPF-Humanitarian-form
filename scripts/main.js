@@ -36,6 +36,24 @@ jQuery(document).ready(function () {
     var alt_s430 = $(".h_st_s430").height();
     $(".h_l_s430").height(alt_s430 + 8);
 
+    var alt_s514 = $(".h_st_s514").height();
+    $(".h_l_s514").height(alt_s514 + 8);
+
+    var alt_s524 = $(".h_st_s524").height();
+    $(".h_l_s524").height(alt_s524 + 8);
+
+    var alt_s525 = $(".h_st_s525").height();
+    $(".h_l_s525").height(alt_s525 + 8);
+
+    var alt_s526 = $(".h_st_s526").height();
+    $(".h_l_s526").height(alt_s526 + 8);
+
+    var alt_s527 = $(".h_st_s527").height();
+    $(".h_l_s527").height(alt_s527 + 8);
+
+    var alt_s528 = $(".h_st_s528").height();
+    $(".h_l_s528").height(alt_s528 + 8);
+
     $("#selectbox1").change(function () {
         var str = "";
         $("#selectbox1 option:selected").each(function () {
@@ -106,6 +124,24 @@ jQuery(document).ready(function () {
 
         var alt_s430 = $(".h_st_s430").height();
         $(".h_l_s430").height(alt_s430 + 8);
+
+        var alt_s514 = $(".h_st_s514").height();
+        $(".h_l_s514").height(alt_s514 + 8);
+
+        var alt_s524 = $(".h_st_s524").height();
+        $(".h_l_s524").height(alt_s524 + 8);
+
+        var alt_s525 = $(".h_st_s525").height();
+        $(".h_l_s525").height(alt_s525 + 8);
+
+        var alt_s526 = $(".h_st_s526").height();
+        $(".h_l_s526").height(alt_s526 + 8);
+
+        var alt_s527 = $(".h_st_s527").height();
+        $(".h_l_s527").height(alt_s527 + 8);
+
+        var alt_s528 = $(".h_st_s528").height();
+        $(".h_l_s528").height(alt_s528 + 8);
 
     });
 });

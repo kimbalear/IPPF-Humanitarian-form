@@ -795,4 +795,189 @@
     }
   }
 
+  .content_type6cs {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow-x: auto;
+    margin-bottom: 21px;
+
+    .wrapper_cont {
+      width: auto;
+      height: auto;
+      box-sizing: border-box;
+
+      .g_y {
+        float: left;
+        width: 49.7%;
+        height: auto;
+        box-sizing: border-box;
+
+        .group {
+          float: left;
+          width: 100%;
+          height: auto;
+          box-sizing: border-box;
+
+          .group_title_s1 {
+
+            .group_title_p {
+              width: 100%;
+              height: 48px;
+              text-align: center;
+              font-size: 1em;
+              font-weight: 500;
+              border-right: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              flex-direction: column;
+              box-sizing: border-box;
+            }
+          }
+
+          .group_data_s1 {
+            width: auto;
+            height: auto;
+            box-sizing: border-box;
+
+            .data_cel-indicators {
+              float: left;
+              width: 100%;
+              height: auto;
+              min-height: 48px;
+              padding: 8px;
+              font-size: 0.9em;
+              border-right: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              box-sizing: border-box;
+
+              div {
+                width: 100%;
+                line-height: 21px;
+                box-sizing: border-box;
+              }
+            }
+
+            .group_frame {
+              width: 100%;
+              height: auto;
+              box-sizing: border-box;
+
+
+              .group_title_s1 {
+                width: 100%;
+                float: left;
+                padding: 4px;
+                height: 36;
+                padding: 2px;
+                min-height: 48px;
+                font-size: 0.9em;
+                text-align: center;
+                height: auto;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                box-sizing: border-box;
+              }
+
+              .data_cel {
+                width: 100%;
+                float: left;
+                padding: 4px;
+                height: 36;
+                text-align: center;
+                min-height: 48px;
+                font-size: 0.9em;
+                height: auto;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                box-sizing: border-box;
+
+                input {
+                  max-width: fit-content;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .g_x {
+        float: left;
+        width: 10%;
+        height: auto;
+        box-sizing: border-box;
+
+        .group {
+          float: left;
+          width: 100%;
+          height: auto;
+          box-sizing: border-box;
+
+          .group_title_s1 {
+
+            .group_title_p {
+              width: 100%;
+              height: 48px;
+              text-align: center;
+              font-size: 1em;
+              font-weight: 500;
+              border-right: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              flex-direction: column;
+              box-sizing: border-box;
+            }
+          }
+
+          .group_data_s1 {
+            width: auto;
+            height: auto;
+            box-sizing: border-box;
+
+            .group_frame {
+              width: 100%;
+              height: auto;
+              box-sizing: border-box;
+
+              .data_cel-f {
+                width: 100%;
+                float: left;
+                padding: 4px;
+                min-height: 36px;
+                text-align: center;
+                min-height: 48px;
+                font-size: 0.9em;
+                height: auto;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                box-sizing: border-box;
+
+                input {
+                  width: 85%;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
