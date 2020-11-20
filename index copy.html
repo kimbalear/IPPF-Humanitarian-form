@@ -1,0 +1,1337 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>HUR - Humanitarian Response</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body {
+  padding: 50px;
+  background-color: white;
+}
+
+.s-hidden {
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font: normal 11px/22px Arial, Sans-Serif;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.styledSelect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.styledSelect:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  top: 9px;
+  right: 6px;
+}
+
+.styledSelect:active, .styledSelect.active {
+  background-color: #eee;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0 0;
+  padding: 0 0;
+  list-style: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.options li {
+  padding: 0 6px;
+  margin: 0 0;
+  padding: 0 10px;
+}
+
+.options li:hover {
+  background-color: #39f;
+  color: white;
+}
+
+.page .content_type5c {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow-x: auto;
+  margin-bottom: 21px;
+}
+.page .content_type5c .wrapper_cont {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y {
+  float: left;
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_title_s1 .group_title_p {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators {
+  float: left;
+  width: 100%;
+  height: 288px !important;
+  padding: 8px;
+  font-size: 0.9em;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators div {
+  width: 100%;
+  line-height: 21px;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  text-align: center;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
+  width: 95%;
+}
+.page .content_type5c .wrapper_cont .g_x {
+  float: left;
+  width: calc((100%-30%)/5.9);
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_title_s1 .group_title_p {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .data_cel-indicators {
+  float: left;
+  width: 100%;
+  height: 271px !important;
+  padding: 8px 0;
+  font-size: 0.9em;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .data_cel-indicators div {
+  padding: 8px;
+  width: 230px;
+  line-height: 21px;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .group_title_s {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  text-align: center;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
+  width: 95%;
+}
+.page .content_type5cs8 {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow-x: auto;
+  margin-bottom: 21px;
+}
+.page .content_type5cs8 .wrapper_cont {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y {
+  float: left;
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_title_s1 .group_title_p {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  font-size: 0.9em;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators div {
+  width: 100%;
+  line-height: 21px;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
+  width: 100%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  text-align: center;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
+  width: 100%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
+  max-width: fit-content;
+}
+.page .content_type5cs8 .wrapper_cont .g_x {
+  float: left;
+  width: calc((100%-30%)/5.9);
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_x .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_x .group .group_title_s1 .group_title_p {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_x .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_x .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f {
+  width: 100%;
+  float: left;
+  padding: 4px;
+  min-height: 36px;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5cs8 .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f input {
+  width: 95%;
+}
+.page .content_type2c {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  margin-bottom: 21px;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_y {
+  float: left;
+  width: 91.6%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_y .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_y .group .group_data_s1 {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators-f {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators-m {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x {
+  float: left;
+  width: 8%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 {
+  width: 100%;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-f {
+  width: 100%;
+  display: inline-block;
+  padding: 4px;
+  height: auto;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-f input {
+  width: 95%;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m {
+  width: 100%;
+  display: inline-block;
+  padding: 4px;
+  height: auto;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m input {
+  width: 95%;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-indicators {
+  float: left;
+  width: 100%;
+  height: 271px !important;
+  padding: 8px 0;
+  font-size: 0.9em;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-indicators div {
+  padding: 8px;
+  width: 230px;
+  line-height: 21px;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame .group_title_s {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  text-align: center;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
+  width: 95%;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+</style>
+<body class="page">
+  <select id="selectbox1">
+    <option disabled="disabled">Select an option</option>
+    <option value="dextroverse">Dextroverse</option>
+    <option value="sinistroverse">Sinistroverse (Arabic)</option>
+  </select>
+  <br /><br />
+  <div id="tabs">
+    <ul class="listitems">
+      <li data-position="1"><a href="#summary" keyword="opt:000">Summary</a></li>
+      <li data-position="2"><a href="#objetive1" keyword="opt:000">Objetive 1</a></li>
+      <li data-position="3"><a href="#objetive2" keyword="opt:000">Objetive 2</a></li>
+      <li data-position="4"><a href="#objetive3" keyword="opt:000">Objetive 3</a></li>
+      <li data-position="5"><a href="#objetive4" keyword="opt:000">Objetive 4</a></li>
+      <li data-position="6"><a href="#objetive5" keyword="opt:000">Objetive 5</a></li>
+      <li data-position="7"><a href="#objetive6" keyword="opt:000">Objetive 6</a></li>
+      <li data-position="8"><a href="#bss" keyword="opt:000">B.S.S</a></li>
+      <li data-position="9"><a href="#hsm" keyword="opt:000">H.S.M</a></li>
+      <li data-position="10"><a href="#aca" keyword="opt:000">A.C.A</a></li>
+      <li data-position="11"><span style="float:right;">1.0</span></li>
+    </ul>
+    <!-- ============================================================================================================ -->
+    <!-- Summary Tab -->
+    <div id="summary">
+      <div class="content_type5c"><!-- S1 -->
+        <div class="wrapper_cont">
+          <div class="g_y">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p"></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-indicators">
+                  <div>
+                    TOTAL number of clients reached with services: by age and
+                    gender (including awareness session, MISP, SRH and non-SRH services)*
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Female</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Male</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Other</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Do not wish to disclose</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_type2c"><!-- S2 S3 S4 -->
+        <div class="wrapper_cont">
+          <div class="g_y">
+            <div class="group">
+              <div class="group_data_s1 h_st_s234_1">
+                <div class="data_cel-indicators-f">TOTAL number of clients reached with services who are
+                  disabled: by gender (including awareness session, MISP, SRH and non-SRH services)
+                </div>
+              </div>
+              <div class="group_data_s1 h_st_s234_2">
+                <div class="data_cel-indicators-m">Number of clients provided with services who are pregnant
+                  or lactating (including awareness session, MISP, SRH and non-SRH services)
+                </div>
+              </div>
+              <div class="group_data_s1 h_st_s234_3">
+                <div class="data_cel-indicators-m">Number of mobile clinics / medical mission/ camps organized
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_data_s1">
+                <div class="data_cel-f h_l_s234_1"><input /></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-m h_l_s234_2"><input /></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-m h_l_s234_3"><input /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_type5c"><!-- S5 S6 -->
+        <div class="wrapper_cont">
+          <div class="g_y">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p"></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-indicators">
+                  <div>
+                    Number of clients provided with SRH services (sub-set of the TOTAL clients reached)
+                  </div>
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-indicators">
+                  <div>
+                    Number of clients provided with non-SRH services (sub-set of the TOTAL clients reached)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Female</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Male</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Other</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Do not wish to disclose</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                  <div class="line_frame">
+                    <div class="group_title_s">0-9</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">10-14</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">15-19</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">20-24</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">25-49</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                  <div class="line_frame">
+                    <div class="group_title_s">=>50</div>
+                    <div class="data_cel"><input /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_type2c"><!-- S7 -->
+        <div class="wrapper_cont">
+          <div class="g_y">
+            <div class="group">
+              <div class="group_data_s1">
+                <div class="data_cel-indicators-f">Total number of awareness sessions conducted
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_data_s1">
+                <div class="data_cel-f"><input /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_type5cs8"><!-- S8-->
+        <div class="wrapper_cont">
+          <div class="g_y">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p"></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-indicators h_st_s8">
+                  <div>
+                    Number of participants attending the awareness sessions/ Health information sessions (sub-set of the
+                    TOTAL clients reached)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Male</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                    <div class="data_cel-f h_l_s8"><input />
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Female</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                    <div class="data_cel-f h_l_s8"><input /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Other response</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                    <div class="data_cel-f h_l_s8"><input /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_title_s1">
+                <div class="group_title_p">Do not wish to disclose</div>
+              </div>
+              <div class="group_data_s1">
+                <div class="group_frame">
+                    <div class="data_cel-f h_l_s8"><input /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_type2c"><!-- S9 S10 S11 -->
+        <div class="wrapper_cont">
+          <div class="g_y">
+            <div class="group">
+              <div class="group_data_s1">
+                <div class="data_cel-indicators-f">Proportion of clients receiving services that identify as youth
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-indicators-m">Proportion of people living with disability that receive services
+                </div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-indicators-m">Proportion of people living with HIV that receive services
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_x">
+            <div class="group">
+              <div class="group_data_s1">
+                <div class="data_cel-f"><input /></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-m"><input /></div>
+              </div>
+              <div class="group_data_s1">
+                <div class="data_cel-m"><input /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ============================================================================================================ -->
+    <!-- Objetive 1 Tab -->
+    <div id="objetive1">Objetive 1</div>
+    <!-- ============================================================================================================ -->
+    <!-- Objetive 2 Tab -->
+    <div id="objetive2">Objetive 2</div>
+    <!-- ============================================================================================================ -->
+    <!-- Objetive 3 Tab -->
+    <div id="objetive3">Objetive 3</div>
+    <!-- ============================================================================================================ -->
+    <!-- Objetive 4 Tab -->
+    <div id="objetive4">Objetive 4</div>
+    <!-- ============================================================================================================ -->
+    <!-- Objetive 5 Tab -->
+    <div id="objetive5">Objetive 5</div>
+    <!-- ============================================================================================================ -->
+    <!-- Objetive 6 Tab -->
+    <div id="objetive6">Objetive 6</div>
+    <!-- ============================================================================================================ -->
+    <!-- B.S.S Tab -->
+    <div id="bss">B.S.S </div>
+    <!-- ============================================================================================================ -->
+    <!-- H.S.M Tab -->
+    <div id="hsm">H.S.M</div>
+    <!-- ============================================================================================================ -->
+    <!-- A.C.A Tab -->
+    <div id="aca">aca</div>
+  </div>
+
+</body>
+<script>
+  jQuery(document).ready(function () {
+    var alt_s234_1 = $(".h_st_s234_1").height();
+    $(".h_l_s234_1").height(alt_s234_1-6);
+    var alt_s234_2 = $(".h_st_s234_2").height();
+    $(".h_l_s234_2").height(alt_s234_2-6);
+    var alt_s234_3 = $(".h_st_s234_3").height();
+    $(".h_l_s234_3").height(alt_s234_3-6);
+
+    var alt_s8 = $(".h_st_s8").height();
+    $(".h_l_s8").height(alt_s8+8);
+    $("#selectbox1").change(function () {
+        var str = "";
+        $("#selectbox1 option:selected").each(function () {
+            str = $(this).text();
+        });
+
+        if (str === 'Dextroverse') {
+            $('.g_y').css('float', 'left');
+            $('.g_x').css('float', 'left');
+            $('.group').css('float', 'left');
+            $('.group_title_s').css('float', 'left');
+            $('.group_title_none').css('float', 'left');
+            $('.data_cel-indicators').css({"float": "left", "text-align": "left"});
+            $('.data_cel').css({"float": "left", "text-align": "left"});
+            $(".listitems li").sort(sort_li_dex).appendTo('.listitems');
+        } else if (str === 'Sinistroverse (Arabic)') {
+            $('.g_y').css('float', 'right');
+            $('.g_x').css('float', 'right');
+            $('.group').css('float', 'right');
+            $('.group_title_s').css('float', 'right');
+            $('.group_title_none').css('float', 'right');
+            $('.data_cel-indicators').css({"float": "right", "text-align": "right"});
+            $('.data_cel').css({"float": "right", "text-align": "right"});
+            $(".listitems li").sort(sort_li_sin).appendTo('.listitems');
+        }
+        function sort_li_dex(a, b) {
+            return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;
+        }
+        function sort_li_sin(a, b) {
+            return ($(b).data('position')) < ($(a).data('position')) ? -1 : 1;
+        }
+    }).change();
+
+    $(window).resize(function(){
+    var alt_s234_1 = $(".h_st_s234_1").height();
+    $(".h_l_s234_1").height(alt_s234_1-6);
+    var alt_s234_2 = $(".h_st_s234_2").height();
+    $(".h_l_s234_2").height(alt_s234_2-6);
+    var alt_s234_3 = $(".h_st_s234_3").height();
+    $(".h_l_s234_3").height(alt_s234_3-6);
+
+    var alt_s8 = $(".h_st_s8").height();
+    $(".h_l_s8").height(alt_s8+8);
+    });
+});
+</script>
+</html>
