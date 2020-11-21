@@ -2,6 +2,14 @@
 
 .page {
 
+  .not_found {
+    border: 2px solid red;
+  }
+
+  input {
+    box-sizing: border-box;
+  }
+
   .content_type2c {
     width: 100%;
     height: auto;
@@ -101,12 +109,12 @@
               align-content: center;
               flex-direction: column;
               box-sizing: border-box;
-  
+
               input {
-                width: 85%;
+                width: 100%;
               }
             }
-  
+
             .data_cel-m {
               width: 100%;
               display: inline-block;
@@ -123,9 +131,9 @@
               align-content: center;
               flex-direction: column;
               box-sizing: border-box;
-  
+
               input {
-                width: 85%;
+                width: 100%;
               }
             }
           }
@@ -195,7 +203,7 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
             }
@@ -313,7 +321,7 @@
                 box-sizing: border-box;
 
                 input {
-                  max-width: fit-content;
+                  width: 100%;
                 }
               }
             }
@@ -379,10 +387,10 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
-              
+
             }
           }
         }
@@ -497,7 +505,7 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
             }
@@ -600,7 +608,7 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
             }
@@ -717,7 +725,7 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
             }
@@ -820,7 +828,7 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
             }
@@ -938,7 +946,7 @@
                 box-sizing: border-box;
 
                 input {
-                  max-width: fit-content;
+                  width: 100%;
                 }
               }
             }
@@ -1004,10 +1012,10 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
-              
+
             }
           }
         }
@@ -1123,7 +1131,7 @@
                 box-sizing: border-box;
 
                 input {
-                  max-width: fit-content;
+                  width: 100%;
                 }
               }
             }
@@ -1189,10 +1197,10 @@
                 box-sizing: border-box;
 
                 input {
-                  width: 85%;
+                  width: 100%;
                 }
               }
-              
+
             }
           }
         }

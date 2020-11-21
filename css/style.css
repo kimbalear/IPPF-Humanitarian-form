@@ -71,6 +71,12 @@ body {
   color: white;
 }
 
+.page .not_found {
+  border: 2px solid red;
+}
+.page input {
+  box-sizing: border-box;
+}
 .page .content_type2c {
   width: 100%;
   height: auto;
@@ -167,7 +173,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-f input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m {
   width: 100%;
@@ -187,7 +193,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 {
   width: auto;
@@ -249,7 +255,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type3c {
   width: 100%;
@@ -351,7 +357,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type3c .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
-  max-width: fit-content;
+  width: 100%;
 }
 .page .content_type3c .wrapper_cont .g_x {
   float: left;
@@ -407,7 +413,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type3c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type5c {
   width: 100%;
@@ -508,7 +514,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type5c .wrapper_cont .g_x {
   float: left;
@@ -596,7 +602,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type5c2l {
   width: 100%;
@@ -697,7 +703,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type5c2l .wrapper_cont .g_x {
   float: left;
@@ -785,7 +791,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type5cs8 {
   width: 100%;
@@ -887,7 +893,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
-  max-width: fit-content;
+  width: 100%;
 }
 .page .content_type5cs8 .wrapper_cont .g_x {
   float: left;
@@ -943,7 +949,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type5cs8 .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f input {
-  width: 85%;
+  width: 100%;
 }
 .page .content_type6cs {
   width: 100%;
@@ -1045,7 +1051,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type6cs .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
-  max-width: fit-content;
+  width: 100%;
 }
 .page .content_type6cs .wrapper_cont .g_x {
   float: left;
@@ -1101,7 +1107,7 @@ body {
   box-sizing: border-box;
 }
 .page .content_type6cs .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f input {
-  width: 85%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
