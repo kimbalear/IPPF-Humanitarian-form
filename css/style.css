@@ -598,6 +598,195 @@ body {
 .page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
   width: 85%;
 }
+.page .content_type5c2l {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow-x: auto;
+  margin-bottom: 21px;
+}
+.page .content_type5c2l .wrapper_cont {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y {
+  float: left;
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_title_s1 .group_title_p {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators {
+  float: left;
+  width: 100%;
+  height: 96px !important;
+  padding: 8px;
+  font-size: 0.9em;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .data_cel-indicators div {
+  width: 100%;
+  line-height: 21px;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  text-align: center;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel input {
+  width: 85%;
+}
+.page .content_type5c2l .wrapper_cont .g_x {
+  float: left;
+  width: calc((100%-30%)/5.9);
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group {
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_title_s1 .group_title_p {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .data_cel-indicators {
+  float: left;
+  width: 100%;
+  height: 271px !important;
+  padding: 8px 0;
+  font-size: 0.9em;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .data_cel-indicators div {
+  padding: 8px;
+  width: 230px;
+  line-height: 21px;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame .group_title_s {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  padding: 2px;
+  min-height: 48px;
+  font-size: 0.9em;
+  text-align: center;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel {
+  width: 50%;
+  float: left;
+  padding: 4px;
+  height: 36;
+  text-align: center;
+  min-height: 48px;
+  font-size: 0.9em;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel input {
+  width: 85%;
+}
 .page .content_type5cs8 {
   width: 100%;
   height: auto;

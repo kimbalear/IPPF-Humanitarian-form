@@ -54,6 +54,9 @@ jQuery(document).ready(function () {
     var alt_s528 = $(".h_st_s528").height();
     $(".h_l_s528").height(alt_s528 + 8);
 
+    var alt_s65 = $(".h_st_s65").height();
+        $(".h_l_s65").height(alt_s65 + 8);
+
     $("#selectbox1").change(function () {
         var str = "";
         $("#selectbox1 option:selected").each(function () {
@@ -142,6 +145,9 @@ jQuery(document).ready(function () {
 
         var alt_s528 = $(".h_st_s528").height();
         $(".h_l_s528").height(alt_s528 + 8);
+
+        var alt_s65 = $(".h_st_s65").height();
+        $(".h_l_s65").height(alt_s65 + 8);
 
     });
 });
