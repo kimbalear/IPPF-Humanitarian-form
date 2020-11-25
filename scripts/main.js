@@ -1,61 +1,147 @@
 jQuery(document).ready(function () {
-    var alt_s234_1 = $(".h_st_s234_1").height();
-    $(".h_l_s234_1").height(alt_s234_1 - 6);
-    var alt_s234_2 = $(".h_st_s234_2").height();
-    $(".h_l_s234_2").height(alt_s234_2 - 6);
-    var alt_s234_3 = $(".h_st_s234_3").height();
-    $(".h_l_s234_3").height(alt_s234_3 - 6);
+    var S1_c1 = $(".S1_c1").height();
+    $(".S1_c2").height(S1_c1);
 
-    var alt_s8 = $(".h_st_s8").height();
-    $(".h_l_s8").height(alt_s8 + 8);
+    var S2_c1 = $(".S2_c1").height();
+    $(".S2_c2").height(S2_c1);
 
-    var alt_s11 = $(".h_st_s11").height();
-    $(".h_l_s11").height(alt_s11 + 8);
+
+    var S3_c1 = $(".S3_c1").height();
+    $(".S3_c2").height(S3_c1);
+
+    /******/
+    for(i=7; i <=12; i++){
+        var vhi = 'S'+i+'_c1';
+        v2 = 'S'+i+'_c2';
+        var vhi = $(".S7_c1").height();
+        $(".S7_c2").height(vhi);
+    }
+
+    var S7_c1 = $(".S7_c1").height();
+    $(".S7_c2").height(S7_c1);
+
+    var S8_c1 = $(".S8_c1").height();
+    $(".S8_c2").height(S8_c1);
+
+    var S9_c1 = $(".S9_c1").height();
+    $(".S9_c2").height(S9_c1);
+
+    var S10_c1 = $(".S10_c1").height();
+    $(".S10_c2").height(S10_c1);
+
+    var S11_c1 = $(".S11_c1").height();
+    $(".S11_c2").height(S11_c1);
+
+    var S12_c1 = $(".S12_c1").height();
+    $(".S12_c2").height(S12_c1);
+
+    /******/
+
+    var O11_c1 = $(".O11_c1").height();
+    $(".O11_c2").height(O11_c1);
+
+    /******/
+
+    var O28_c1 = $(".O28_c1").height();
+    $(".O28_c2").height(O28_c1);
+
+    var O29_c1 = $(".O29_c1").height();
+    $(".O29_c2").height(O29_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O211_c1 = $(".O211_c1").height();
+    $(".O211_c2").height(O211_c1);
+
+    var O212_c1 = $(".O212_c1").height();
+    $(".O212_c2").height(O212_c1);
+
+    var O213_c1 = $(".O213_c1").height();
+    $(".O213_c2").height(O213_c1);
+
+    var O214_c1 = $(".O214_c1").height();
+    $(".O214_c2").height(O214_c1);
+
+    var O215_c1 = $(".O215_c1").height();
+    $(".O215_c2").height(O215_c1);
+
+    var O216_c1 = $(".O216_c1").height();
+    $(".O216_c2").height(O216_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+
+    var O210_c1 = $(".O210_c1").height();
+    $(".O210_c2").height(O210_c1);
+    
+
+    
+
+
+
+
+
 
     var alt_s31 = $(".h_st_s31").height();
-    $(".h_l_s31").height(alt_s31 + 8);
+    $(".h_l_s31").height(alt_s31);
 
     var alt_s32 = $(".h_st_s32").height();
-    $(".h_l_s32").height(alt_s32 + 8);
+    $(".h_l_s32").height(alt_s32);
 
     var alt_s310 = $(".h_st_s310").height();
-    $(".h_l_s310").height(alt_s310 + 8);
+    $(".h_l_s310").height(alt_s310);
 
     var alt_s311 = $(".h_st_s311").height();
-    $(".h_l_s311").height(alt_s311 + 8);
+    $(".h_l_s311").height(alt_s311);
 
     var alt_s327 = $(".h_st_s327").height();
-    $(".h_l_s327").height(alt_s327 + 8);
+    $(".h_l_s327").height(alt_s327);
 
     var alt_s328 = $(".h_st_s328").height();
-    $(".h_l_s328").height(alt_s328 + 8);
+    $(".h_l_s328").height(alt_s328);
 
     var alt_s329 = $(".h_st_s329").height();
-    $(".h_l_s329").height(alt_s329 + 8);
+    $(".h_l_s329").height(alt_s329);
 
     var alt_s430 = $(".h_st_s430").height();
-    $(".h_l_s430").height(alt_s430 + 8);
+    $(".h_l_s430").height(alt_s430);
 
     var alt_s514 = $(".h_st_s514").height();
-    $(".h_l_s514").height(alt_s514 + 8);
+    $(".h_l_s514").height(alt_s514);
 
     var alt_s524 = $(".h_st_s524").height();
-    $(".h_l_s524").height(alt_s524 + 8);
+    $(".h_l_s524").height(alt_s524);
 
     var alt_s525 = $(".h_st_s525").height();
-    $(".h_l_s525").height(alt_s525 + 8);
+    $(".h_l_s525").height(alt_s525);
 
     var alt_s526 = $(".h_st_s526").height();
-    $(".h_l_s526").height(alt_s526 + 8);
+    $(".h_l_s526").height(alt_s526);
 
     var alt_s527 = $(".h_st_s527").height();
-    $(".h_l_s527").height(alt_s527 + 8);
+    $(".h_l_s527").height(alt_s527);
 
     var alt_s528 = $(".h_st_s528").height();
-    $(".h_l_s528").height(alt_s528 + 8);
+    $(".h_l_s528").height(alt_s528);
 
     var alt_s65 = $(".h_st_s65").height();
-        $(".h_l_s65").height(alt_s65 + 8);
+        $(".h_l_s65").height(alt_s65);
 
     $("#selectbox1").change(function () {
         var str = "";
@@ -91,63 +177,69 @@ jQuery(document).ready(function () {
     }).change();
 
     $(window).resize(function () {
-        var alt_s234_1 = $(".h_st_s234_1").height();
-        $(".h_l_s234_1").height(alt_s234_1 - 6);
-        var alt_s234_2 = $(".h_st_s234_2").height();
-        $(".h_l_s234_2").height(alt_s234_2 - 6);
-        var alt_s234_3 = $(".h_st_s234_3").height();
-        $(".h_l_s234_3").height(alt_s234_3 - 6);
+        var S1_c1 = $(".S1_c1").height();
+    $(".S1_c2").height(S1_c1);
 
-        var alt_s8 = $(".h_st_s8").height();
-        $(".h_l_s8").height(alt_s8 + 8);
+    var S2_c1 = $(".S2_c1").height();
+    $(".S2_c2").height(S2_c1);
 
-        var alt_s11 = $(".h_st_s11").height();
-        $(".h_l_s11").height(alt_s11 + 8);
 
-        var alt_s31 = $(".h_st_s31").height();
-        $(".h_l_s31").height(alt_s31 + 8);
+    var S3_c1 = $(".S3_c1").height();
+    $(".S3_c2").height(S3_c1);
 
-        var alt_s32 = $(".h_st_s32").height();
-        $(".h_l_s32").height(alt_s32 + 8);
+    var S3_c1 = $(".S3_c1").height();
+    $(".S3_c2").height(S3_c1);
 
-        var alt_s310 = $(".h_st_s310").height();
-        $(".h_l_s310").height(alt_s310 + 8);
+    var alt_s8 = $(".h_st_s8").height();
+    $(".h_l_s8").height(alt_s8);
 
-        var alt_s311 = $(".h_st_s311").height();
-        $(".h_l_s311").height(alt_s311 + 8);
+    var alt_s11 = $(".h_st_s11").height();
+    $(".h_l_s11").height(alt_s11);
 
-        var alt_s327 = $(".h_st_s327").height();
-        $(".h_l_s327").height(alt_s327 + 8);
+    var alt_s31 = $(".h_st_s31").height();
+    $(".h_l_s31").height(alt_s31);
 
-        var alt_s328 = $(".h_st_s328").height();
-        $(".h_l_s328").height(alt_s328 + 8);
+    var alt_s32 = $(".h_st_s32").height();
+    $(".h_l_s32").height(alt_s32);
 
-        var alt_s329 = $(".h_st_s329").height();
-        $(".h_l_s329").height(alt_s329 + 8);
+    var alt_s310 = $(".h_st_s310").height();
+    $(".h_l_s310").height(alt_s310);
 
-        var alt_s430 = $(".h_st_s430").height();
-        $(".h_l_s430").height(alt_s430 + 8);
+    var alt_s311 = $(".h_st_s311").height();
+    $(".h_l_s311").height(alt_s311);
 
-        var alt_s514 = $(".h_st_s514").height();
-        $(".h_l_s514").height(alt_s514 + 8);
+    var alt_s327 = $(".h_st_s327").height();
+    $(".h_l_s327").height(alt_s327);
 
-        var alt_s524 = $(".h_st_s524").height();
-        $(".h_l_s524").height(alt_s524 + 8);
+    var alt_s328 = $(".h_st_s328").height();
+    $(".h_l_s328").height(alt_s328);
 
-        var alt_s525 = $(".h_st_s525").height();
-        $(".h_l_s525").height(alt_s525 + 8);
+    var alt_s329 = $(".h_st_s329").height();
+    $(".h_l_s329").height(alt_s329);
 
-        var alt_s526 = $(".h_st_s526").height();
-        $(".h_l_s526").height(alt_s526 + 8);
+    var alt_s430 = $(".h_st_s430").height();
+    $(".h_l_s430").height(alt_s430);
 
-        var alt_s527 = $(".h_st_s527").height();
-        $(".h_l_s527").height(alt_s527 + 8);
+    var alt_s514 = $(".h_st_s514").height();
+    $(".h_l_s514").height(alt_s514);
 
-        var alt_s528 = $(".h_st_s528").height();
-        $(".h_l_s528").height(alt_s528 + 8);
+    var alt_s524 = $(".h_st_s524").height();
+    $(".h_l_s524").height(alt_s524);
 
-        var alt_s65 = $(".h_st_s65").height();
-        $(".h_l_s65").height(alt_s65 + 8);
+    var alt_s525 = $(".h_st_s525").height();
+    $(".h_l_s525").height(alt_s525);
+
+    var alt_s526 = $(".h_st_s526").height();
+    $(".h_l_s526").height(alt_s526);
+
+    var alt_s527 = $(".h_st_s527").height();
+    $(".h_l_s527").height(alt_s527);
+
+    var alt_s528 = $(".h_st_s528").height();
+    $(".h_l_s528").height(alt_s528);
+
+    var alt_s65 = $(".h_st_s65").height();
+        $(".h_l_s65").height(alt_s65);
 
     });
 });

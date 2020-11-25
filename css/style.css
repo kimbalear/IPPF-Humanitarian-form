@@ -114,6 +114,9 @@ body {
   min-height: 48px;
   font-size: 0.9em;
   height: auto;
+  border-left: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-left: 1px solid #ccc;
   border: 1px solid #ccc;
   display: flex;
   justify-content: center;
@@ -157,12 +160,11 @@ body {
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-f {
   width: 100%;
   display: inline-block;
-  padding: 4px;
+  padding: 8px;
   height: auto;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
-  height: auto;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
@@ -178,9 +180,7 @@ body {
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m {
   width: 100%;
   display: inline-block;
-  padding: 4px;
-  height: auto;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   height: auto;
@@ -206,6 +206,7 @@ body {
   height: 271px !important;
   padding: 8px 0;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -222,9 +223,9 @@ body {
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame .group_title_s {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -240,7 +241,7 @@ body {
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -307,6 +308,7 @@ body {
   height: auto;
   padding: 8px;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -324,9 +326,9 @@ body {
 .page .content_type3c .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
   width: 100%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -342,7 +344,7 @@ body {
 .page .content_type3c .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
   width: 100%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -398,8 +400,7 @@ body {
 .page .content_type3c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f {
   width: 100%;
   float: left;
-  padding: 4px;
-  min-height: 36px;
+  padding: 8px;
   text-align: center;
   min-height: 48px;
   font-size: 0.9em;
@@ -464,6 +465,7 @@ body {
   height: 288px !important;
   padding: 8px;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -481,9 +483,9 @@ body {
 .page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -499,7 +501,7 @@ body {
 .page .content_type5c .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -553,6 +555,7 @@ body {
   height: 271px !important;
   padding: 8px 0;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -569,9 +572,9 @@ body {
 .page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .group_title_s {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -587,7 +590,7 @@ body {
 .page .content_type5c .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -653,6 +656,7 @@ body {
   height: 96px !important;
   padding: 8px;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -670,9 +674,9 @@ body {
 .page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -688,7 +692,7 @@ body {
 .page .content_type5c2l .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -742,6 +746,7 @@ body {
   height: 271px !important;
   padding: 8px 0;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -758,9 +763,9 @@ body {
 .page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame .group_title_s {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -776,7 +781,7 @@ body {
 .page .content_type5c2l .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel {
   width: 50%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -843,6 +848,7 @@ body {
   min-height: 48px;
   padding: 8px;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -860,9 +866,9 @@ body {
 .page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
   width: 100%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -878,7 +884,7 @@ body {
 .page .content_type5cs8 .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
   width: 100%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -934,8 +940,7 @@ body {
 .page .content_type5cs8 .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f {
   width: 100%;
   float: left;
-  padding: 4px;
-  min-height: 36px;
+  padding: 8px;
   text-align: center;
   min-height: 48px;
   font-size: 0.9em;
@@ -1001,6 +1006,7 @@ body {
   min-height: 48px;
   padding: 8px;
   font-size: 0.9em;
+  border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -1018,9 +1024,9 @@ body {
 .page .content_type6cs .wrapper_cont .g_y .group .group_data_s1 .group_frame .group_title_s1 {
   width: 100%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
-  padding: 2px;
+  padding: 8px;
   min-height: 48px;
   font-size: 0.9em;
   text-align: center;
@@ -1036,7 +1042,7 @@ body {
 .page .content_type6cs .wrapper_cont .g_y .group .group_data_s1 .group_frame .data_cel {
   width: 100%;
   float: left;
-  padding: 4px;
+  padding: 8px;
   height: 36;
   text-align: center;
   min-height: 48px;
@@ -1092,8 +1098,7 @@ body {
 .page .content_type6cs .wrapper_cont .g_x .group .group_data_s1 .group_frame .data_cel-f {
   width: 100%;
   float: left;
-  padding: 4px;
-  min-height: 36px;
+  padding: 8px;
   text-align: center;
   min-height: 48px;
   font-size: 0.9em;
