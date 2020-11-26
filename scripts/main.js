@@ -1,6 +1,7 @@
 jQuery(document).ready(function () {
-
-    //TAB-1 | Summary
+    resize_tabs_content();
+    function resize_tabs_content(){
+        //TAB-1 | Summary
 
     for (i = 1; i <= 12; i++) {
         var hight_Sc1 = '.S' + i + '_c1';
@@ -88,6 +89,7 @@ jQuery(document).ready(function () {
         //$(hight_ACAc1).css('background-color', 'red');
         //$(hight_ACAc2).css('background-color', 'red');
     }
+    }
 
 
 
@@ -125,69 +127,6 @@ jQuery(document).ready(function () {
     }).change();
 
     $(window).resize(function () {
-        var S1_c1 = $(".S1_c1").height();
-        $(".S1_c2").height(S1_c1);
-
-        var S2_c1 = $(".S2_c1").height();
-        $(".S2_c2").height(S2_c1);
-
-
-        var S3_c1 = $(".S3_c1").height();
-        $(".S3_c2").height(S3_c1);
-
-        var S3_c1 = $(".S3_c1").height();
-        $(".S3_c2").height(S3_c1);
-
-        var alt_s8 = $(".h_st_s8").height();
-        $(".h_l_s8").height(alt_s8);
-
-        var alt_s11 = $(".h_st_s11").height();
-        $(".h_l_s11").height(alt_s11);
-
-        var alt_s31 = $(".h_st_s31").height();
-        $(".h_l_s31").height(alt_s31);
-
-        var alt_s32 = $(".h_st_s32").height();
-        $(".h_l_s32").height(alt_s32);
-
-        var alt_s310 = $(".h_st_s310").height();
-        $(".h_l_s310").height(alt_s310);
-
-        var alt_s311 = $(".h_st_s311").height();
-        $(".h_l_s311").height(alt_s311);
-
-        var alt_s327 = $(".h_st_s327").height();
-        $(".h_l_s327").height(alt_s327);
-
-        var alt_s328 = $(".h_st_s328").height();
-        $(".h_l_s328").height(alt_s328);
-
-        var alt_s329 = $(".h_st_s329").height();
-        $(".h_l_s329").height(alt_s329);
-
-        var alt_s430 = $(".h_st_s430").height();
-        $(".h_l_s430").height(alt_s430);
-
-        var alt_s514 = $(".h_st_s514").height();
-        $(".h_l_s514").height(alt_s514);
-
-        var alt_s524 = $(".h_st_s524").height();
-        $(".h_l_s524").height(alt_s524);
-
-        var alt_s525 = $(".h_st_s525").height();
-        $(".h_l_s525").height(alt_s525);
-
-        var alt_s526 = $(".h_st_s526").height();
-        $(".h_l_s526").height(alt_s526);
-
-        var alt_s527 = $(".h_st_s527").height();
-        $(".h_l_s527").height(alt_s527);
-
-        var alt_s528 = $(".h_st_s528").height();
-        $(".h_l_s528").height(alt_s528);
-
-        var alt_s65 = $(".h_st_s65").height();
-        $(".h_l_s65").height(alt_s65);
-
+        resize_tabs_content();
     });
 });
