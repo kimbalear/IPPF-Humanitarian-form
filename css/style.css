@@ -91,7 +91,7 @@ body {
 }
 .page .content_type2c .wrapper_cont .g_y {
   float: left;
-  width: 91.6%;
+  width: calc(100% - 120px);
   height: auto;
   box-sizing: border-box;
 }
@@ -143,7 +143,7 @@ body {
 }
 .page .content_type2c .wrapper_cont .g_x {
   float: left;
-  width: 8%;
+  width: 120px;
   height: auto;
   box-sizing: border-box;
 }
@@ -194,6 +194,30 @@ body {
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m input {
   width: 100%;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-f-yn {
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-f-yn input {
+  width: auto;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m-yn {
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+  height: auto;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-m-yn input {
+  width: auto;
 }
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 {
   width: auto;
