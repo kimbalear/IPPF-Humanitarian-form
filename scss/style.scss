@@ -621,6 +621,26 @@
                 box-sizing: border-box;
               }
 
+              .group_title_s-f {
+                width: 50%;
+                float: left;
+                padding: 8px;
+                height: 36;
+                padding: 8px;
+                min-height: 48px;
+                font-size: 0.9em;
+                text-align: center;
+                height: auto;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                box-sizing: border-box;
+              }
+
               .data_cel {
                 width: 50%;
                 float: left;
