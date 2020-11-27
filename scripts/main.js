@@ -1,4 +1,14 @@
 jQuery(document).ready(function () {
+    resize_tab1();
+    resize_tab2();
+    resize_tab3();
+    resize_tab4();
+    resize_tab5();
+    resize_tab6();
+    resize_tab7();
+    resize_tab8();
+    resize_tab9();
+    resize_tab10();
 
     $('ul.listitems li').click(function (e) {
         tab_selected = $(this).find('a').attr('href');
@@ -34,54 +44,54 @@ jQuery(document).ready(function () {
                 resize_tab10();
                 break;
         }
+    });
 
-        $("#selectbox1").change(function () {
-            var str = "";
-            $("#selectbox1 option:selected").each(function () {
-                str = $(this).text();
-            });
-
-            if (str === 'Dextroverse') {
-                $('.g_y').css('float', 'left');
-                $('.g_x').css('float', 'left');
-                $('.group').css('float', 'left');
-                $('.group_title_s').css('float', 'left');
-                $('.group_title_none').css('float', 'left');
-                $('.data_cel-indicators').css({ "float": "left", "text-align": "left" });
-                $('.data_cel').css({ "float": "left", "text-align": "left" });
-                $(".listitems li").sort(sort_li_dex).appendTo('.listitems');
-            } else if (str === 'Sinistroverse (Arabic)') {
-                $('.g_y').css('float', 'right');
-                $('.g_x').css('float', 'right');
-                $('.group').css('float', 'right');
-                $('.group_title_s').css('float', 'right');
-                $('.group_title_none').css('float', 'right');
-                $('.data_cel-indicators').css({ "float": "right", "text-align": "right" });
-                $('.data_cel').css({ "float": "right", "text-align": "right" });
-                $(".listitems li").sort(sort_li_sin).appendTo('.listitems');
-            }
-            function sort_li_dex(a, b) {
-                return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;
-            }
-            function sort_li_sin(a, b) {
-                return ($(b).data('position')) < ($(a).data('position')) ? -1 : 1;
-            }
-        }).change();
-
-        $(window).resize(function () {
-            resize_tab1();
-            resize_tab2();
-            resize_tab3();
-            resize_tab4();
-            resize_tab5();
-            resize_tab6();
-            resize_tab7();
-            resize_tab8();
-            resize_tab9();
-            resize_tab10();
+    $("#selectbox1").change(function () {
+        var str = "";
+        $("#selectbox1 option:selected").each(function () {
+            str = $(this).text();
         });
 
+        if (str === 'Dextroverse') {
+            $('.g_y').css('float', 'left');
+            $('.g_x').css('float', 'left');
+            $('.group').css('float', 'left');
+            $('.group_title_s').css('float', 'left');
+            $('.group_title_none').css('float', 'left');
+            $('.data_cel-indicators').css({ "float": "left", "text-align": "left" });
+            $('.data_cel').css({ "float": "left", "text-align": "left" });
+            $(".listitems li").sort(sort_li_dex).appendTo('.listitems');
+        } else if (str === 'Sinistroverse (Arabic)') {
+            $('.g_y').css('float', 'right');
+            $('.g_x').css('float', 'right');
+            $('.group').css('float', 'right');
+            $('.group_title_s').css('float', 'right');
+            $('.group_title_none').css('float', 'right');
+            $('.data_cel-indicators').css({ "float": "right", "text-align": "right" });
+            $('.data_cel').css({ "float": "right", "text-align": "right" });
+            $(".listitems li").sort(sort_li_sin).appendTo('.listitems');
+        }
+        function sort_li_dex(a, b) {
+            return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;
+        }
+        function sort_li_sin(a, b) {
+            return ($(b).data('position')) < ($(a).data('position')) ? -1 : 1;
+        }
+    }).change();
+
+    $(window).resize(function () {
+        resize_tab1();
+        resize_tab2();
+        resize_tab3();
+        resize_tab4();
+        resize_tab5();
+        resize_tab6();
+        resize_tab7();
+        resize_tab8();
+        resize_tab9();
+        resize_tab10();
     });
+
     function resize_tab1() {
         // Summary
         for (i = 1; i <= 12; i++) {
@@ -99,7 +109,7 @@ jQuery(document).ready(function () {
             var hight_O1c2 = '.O1' + i + '_c2';
             var vO1_hight = $(hight_O1c1).height();
             $(hight_O1c2).height(vO1_hight);
-            console.log(hight_O1c1);
+            //console.log(hight_O1c1);
         }
     }
 
@@ -141,6 +151,7 @@ jQuery(document).ready(function () {
             var hight_O5c2 = '.O5' + i + '_c2';
             var vO5_hight = $(hight_O5c1).height();
             $(hight_O5c2).height(vO5_hight);
+            //console.log('c1: ' + hight_O5c1 + ' - ' + hight_O5c2 + ' -hight: ' + vO5_hight);
         }
     }
 
@@ -161,6 +172,7 @@ jQuery(document).ready(function () {
             var hight_BSSc2 = '.BSS' + i + '_c2';
             var vBSS_hight = $(hight_BSSc1).height();
             $(hight_BSSc2).height(vBSS_hight);
+            console.log('c1: ' + hight_BSSc1 + ' - ' + hight_BSSc2 + ' -hight: ' + vBSS_hight);
         }
     }
 
@@ -184,14 +196,4 @@ jQuery(document).ready(function () {
         }
     }
 
-    resize_tab1();
-    resize_tab2();
-    resize_tab3();
-    resize_tab4();
-    resize_tab5();
-    resize_tab6();
-    resize_tab7();
-    resize_tab8();
-    resize_tab9();
-    resize_tab10();
 });

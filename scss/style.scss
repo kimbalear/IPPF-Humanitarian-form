@@ -24,7 +24,7 @@
 
       .g_y {
         float: left;
-        width: calc(100% - 120px);
+        width: calc(100% - 195px);
         height: auto;
         box-sizing: border-box;
 
@@ -81,7 +81,7 @@
 
       .g_x {
         float: left;
-        width: 120px;
+        width: 195px;
         height: auto;
         box-sizing: border-box;
 
@@ -137,31 +137,18 @@
               }
             }
 
-            .data_cel-f-yn {
+            .data_cel-yn {
               width: 100%;
               display: inline-block;
               padding: 8px;
               height: auto;
+              min-height: 48px;
               border-right: 1px solid #ccc;
               border-bottom: 1px solid #ccc;
               box-sizing: border-box;
 
               input {
                 width: auto;
-              }
-            }
-
-            .data_cel-m-yn {
-              width: 100%;
-              display: inline-block;
-              padding: 8px;
-              height: auto;
-              border-right: 1px solid #ccc;
-              border-bottom: 1px solid #ccc;
-              box-sizing: border-box;
-
-              input {
-                width: 100%;
               }
             }
           }
