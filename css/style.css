@@ -208,6 +208,20 @@ body {
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-yn input {
   width: auto;
 }
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-yn_f {
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+  height: auto;
+  min-height: 48px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.page .content_type2c .wrapper_cont .g_x .group .group_data_s1 .data_cel-yn_f input {
+  width: auto;
+}
 .page .content_type2c .wrapper_cont .g_x .group .group_data_s1 {
   width: auto;
   height: auto;

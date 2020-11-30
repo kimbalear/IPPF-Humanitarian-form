@@ -16,22 +16,22 @@ jQuery(document).ready(function () {
             case '#summary':
                 resize_tab1();
                 break;
-            case '#objetive1':
+            case '#Objective1':
                 resize_tab2();
                 break;
-            case '#objetive2':
+            case '#Objective2':
                 resize_tab3();
                 break;
-            case '#objetive3':
+            case '#Objective3':
                 resize_tab4();
                 break;
-            case '#objetive4':
+            case '#Objective4':
                 resize_tab5();
                 break;
-            case '#objetive5':
+            case '#Objective5':
                 resize_tab6();
                 break;
-            case '#objetive':
+            case '#Objective':
                 resize_tab7();
                 break;
             case '#bss':
