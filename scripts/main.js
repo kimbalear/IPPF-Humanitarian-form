@@ -71,6 +71,16 @@ jQuery(document).ready(function () {
             $('.data_cel').css({ "float": "right", "text-align": "right" });
             $(".listitems li").sort(sort_li_sin).appendTo('.listitems');
         }
+        resize_tab1();
+        resize_tab2();
+        resize_tab3();
+        resize_tab4();
+        resize_tab5();
+        resize_tab6();
+        resize_tab7();
+        resize_tab8();
+        resize_tab9();
+        resize_tab10();
         function sort_li_dex(a, b) {
             return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;
         }
