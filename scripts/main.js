@@ -182,7 +182,7 @@ jQuery(document).ready(function () {
             var hight_BSSc2 = '.BSS' + i + '_c2';
             var vBSS_hight = $(hight_BSSc1).height();
             $(hight_BSSc2).height(vBSS_hight);
-            console.log('c1: ' + hight_BSSc1 + ' - ' + hight_BSSc2 + ' -hight: ' + vBSS_hight);
+            //console.log('c1: ' + hight_BSSc1 + ' - ' + hight_BSSc2 + ' -hight: ' + vBSS_hight);
         }
     }
 
@@ -205,5 +205,156 @@ jQuery(document).ready(function () {
             $(hight_ACAc2).height(vACA_hight);
         }
     }
+
+    // ============================================================================================================
+	// DHIS events
+
+	formLoaded();
+	dataValueLoaded();
+
+
+	function formLoaded() {
+		$(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
+			console.log("============ INIT FORM ");
+			new Translation();
+		});
+	}
+
+    // ============================================================================================================
+	// Translation
+
+	function Translation() {
+		var me = this;
+
+		me.projectDataSetId = "cKGde9MMfMH";
+		me.incomeHeadingOptionSetId = "ql1StQfqqxc";
+
+		me.transLang;
+
+		// me.DE_TRANS_PROPERTY = "FORM_NAME";
+		me.DATAELEMENT_KEY = "DATAELEMENT";
+		me.OPTIONSET_KEY = "OPTIONSET";
+		me.DEGROUP_KEY = "DEGROUP";
+
+		me.tableTag = $("body");
+
+
+		me.init = function () {
+			me.transLang = me.getCurrentTransLang();
+			//me.translateDEGroupSetList();
+			//me.translateDataElementList();
+			me.translateOptionSetList();
+		}
+
+		// ----------------------------------------------------------------------------------------------
+		// Supportive methods
+/*
+		me.getCurrentTransLang = function () {
+			me.transLang = $.ajax({
+				type: "GET",
+				url: "../api/userSettings/keyDbLocale" //es
+				, async: false
+			}).responseText;
+
+		}
+
+		me.translateDEGroupSetList = function () {
+			var url = "../api/dataElementGroupSets.json?filter=name:ilike:ABR%20[INF]&fields=id,name,dataElementGroups[id,displayShortName]&paging=false";
+
+			me.loadMetadata(url, function (response) {
+
+				var deGroupSets = response.dataElementGroupSets;
+				for (var i in deGroupSets) {
+					var deGroups = deGroupSets[i].dataElementGroups;
+					for (var j in deGroups) {
+						var deGroup = deGroups[j];
+						me.tableTag.find("[keyword='degr:" + deGroup.id + "']").html(deGroup.displayShortName);
+					}
+				}
+			});
+
+		}
+
+
+		me.translateDataElementList = function () {
+			var url = "../api/dataSets/" + me.projectDataSetId + ".json?fields=dataSetElements[dataElement[id,displayFormName]]";
+			me.loadMetadata(url, function (response) {
+
+				var dataSetElements = response.dataSetElements;
+				for (var i in dataSetElements) {
+					var dataElement = dataSetElements[i].dataElement;
+					var value = me.getTransValue(me.DATAELEMENT_KEY, dataElement);
+					me.tableTag.find("[keyword='de:" + dataElement.id + "']").html(value);
+				}
+			});
+
+		}
+*/
+		me.translateOptionSetList = function () {
+			var url = "../api/optionSets.json?filter=code:ilike:ABR%20-&fields=options[id,displayName]&paging=false";
+			me.loadMetadata(url, function (response) {
+
+				var optionSets = response.optionSets;
+				for (var i in optionSets) {
+					var options = optionSets[i].options;
+					for (var j in options) {
+						var option = options[j];
+						var value = me.getTransValue(me.OPTIONSET_KEY, option);
+						me.tableTag.find("[keyword='opt:" + option.id + "']").html(value);
+					}
+				}
+			});
+		}
+/*
+		me.loadMetadata = function (url, exeFunc) {
+			$.ajax({
+				type: "GET"
+				, url: url
+				, contentType: "application/json;charset=utf-8"
+				, beforeSend: function (xhr) {
+					//me.hideReportTag();
+				}
+				, success: function (response) {
+					exeFunc(response);
+				}
+				, error: function (response) {
+					// me.showReportTag();
+				}
+			}).always(function (data) {
+				// me.showReportTag();
+			});
+
+		}
+*/
+		me.getTransValue = function (key, data) {
+			if (key == me.DATAELEMENT_KEY) {
+				// var translations = data.translations;
+				// if( translations )
+				// {
+				// 	for( var i in translations )
+				// 	{
+				// 		var translation = translations[i];
+				// 		if( translation.property ==  me.DE_TRANS_PROPERTY && translation.locale == me.transLang )
+				// 		{
+				// 			return translation.value;
+				// 		}
+				// 	}
+				// }
+
+				return data.displayFormName;
+
+			}
+			else if (key == me.OPTIONSET_KEY) {
+				return data.displayName;
+			}
+		}
+
+
+		// ----------------------------------------------------------------------------------------------
+		// init
+
+		me.init();
+
+	}
 
 });
