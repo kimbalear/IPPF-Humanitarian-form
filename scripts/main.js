@@ -119,7 +119,7 @@ jQuery(document).ready(function () {
             var hight_O1c2 = '.O1' + i + '_c2';
             var vO1_hight = $(hight_O1c1).height();
             $(hight_O1c2).height(vO1_hight);
-            //console.log(hight_O1c1);
+           //console.log(hight_O1c1);
         }
     }
 
@@ -156,12 +156,12 @@ jQuery(document).ready(function () {
 
     function resize_tab6() {
         //O5
-        for (i = 1; i <= 54; i++) {
+        for (i = 1; i <= 11; i++) {
             var hight_O5c1 = '.O5' + i + '_c1';
             var hight_O5c2 = '.O5' + i + '_c2';
             var vO5_hight = $(hight_O5c1).height();
             $(hight_O5c2).height(vO5_hight);
-            //console.log('c1: ' + hight_O5c1 + ' - ' + hight_O5c2 + ' -hight: ' + vO5_hight);
+            console.log('c1: ' + hight_O5c1 + ' - ' + hight_O5c2 + ' -hight: ' + vO5_hight);
         }
     }
 
@@ -177,7 +177,7 @@ jQuery(document).ready(function () {
 
     function resize_tab8() {
         //Business
-        for (i = 1; i <= 11; i++) {
+        for (i = 1; i <= 12; i++) {
             var hight_BSSc1 = '.BSS' + i + '_c1';
             var hight_BSSc2 = '.BSS' + i + '_c2';
             var vBSS_hight = $(hight_BSSc1).height();

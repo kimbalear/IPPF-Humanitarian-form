@@ -1163,7 +1163,7 @@
             .data_cel-indicators {
               float: left;
               width: 100%;
-              height: 168px !important;
+              min-height: 48px !important;
               padding: 8px;
               font-size: 0.9em;
               border-left: 1px solid #ccc;
